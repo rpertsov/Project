@@ -66,7 +66,7 @@ def weather():
             "temp_c" : response["days"][0]["temp"],
             "temp_max" : response["days"][0]["tempmax"],
             "temp_min" : response["days"][0]["tempmin"],
-            "pressure" : response["days"][0]["pressure"],
+            "pressure_mb" : response["days"][0]["pressure"],
             "windspeed_kph" : response["days"][0]["windspeed"],
             "humidity" : response["days"][0]["humidity"]
         }
