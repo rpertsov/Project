@@ -52,7 +52,7 @@ def weather():
     ur_token = json_data.get("token")
     date = json_data.get("date")
     location = json_data.get("location")
-    url = f'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/{location}/{date}?key=3DAMSWW58Y5WKEFALRVYHG4FB&unitGroup=metric'
+    url = f'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/{location}/{date}?key="put your key"&unitGroup=metric'
     response = requests.get(url).json()
     requester_name = json_data.get("requester_name")
     utc_time=dt.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
